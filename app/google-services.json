@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "102228883803",
+    "firebase_url": "https://shuga2-89cf5-default-rtdb.firebaseio.com",
+    "project_id": "shuga2-89cf5",
+    "storage_bucket": "shuga2-89cf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102228883803:android:dd2c2c7cd271f5918c027e",
+        "android_client_info": {
+          "package_name": "com.usalama.usalamatechnology.shuga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102228883803-5emh8h3qd5okuo0fmh8e72opd5qge697.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY_Opmt-bA4BEdxlDGsi-uPzhKv4DwNO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102228883803-5emh8h3qd5okuo0fmh8e72opd5qge697.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

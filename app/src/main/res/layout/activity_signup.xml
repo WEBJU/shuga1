@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#36C8C7C7"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/DAHeading"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:text="Get Started" />
+
+
+        <TextView
+            style="@style/DAHeading"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+
+            android:text="Sign Up With"
+            android:textSize="@dimen/_24sdp" />
+
+        <Button
+            android:id="@+id/btnSignupPhone"
+            style="@style/DAMaterialButtonStyle.Enabled"
+            android:layout_margin="@dimen/da_spacing_large"
+            android:layout_marginStart="@dimen/da_spacing_large"
+            android:layout_marginEnd="@dimen/da_spacing_large"
+            android:layout_marginBottom="@dimen/da_spacing_large"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@mipmap/ic_phone"
+            android:gravity="center"
+            android:paddingStart="@dimen/da_spacing_large"
+            android:paddingEnd="@dimen/da_spacing_large"
+            android:text="Sign Up With Phone Number"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnSignupFB"
+            style="@style/DAMaterialButtonStyle.Enabled"
+            android:layout_margin="@dimen/da_spacing_large"
+            android:layout_marginStart="@dimen/da_spacing_large"
+            android:layout_marginEnd="@dimen/da_spacing_large"
+            android:layout_marginBottom="@dimen/da_spacing_large"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@mipmap/ic_facebook"
+            android:gravity="center"
+            android:paddingStart="@dimen/da_spacing_large"
+            android:paddingEnd="@dimen/da_spacing_large"
+            android:text="Sign Up With Facebook"
+            android:textAllCaps="false"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/btnSignupGoogle"
+            style="@style/DAMaterialButtonStyle.Enabled"
+            android:layout_margin="@dimen/da_spacing_large"
+            android:layout_marginStart="@dimen/da_spacing_large"
+            android:layout_marginEnd="@dimen/da_spacing_large"
+            android:layout_marginBottom="@dimen/da_spacing_large"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@mipmap/ic_google"
+            android:gravity="center"
+            android:paddingStart="@dimen/da_spacing_large"
+            android:paddingEnd="@dimen/da_spacing_large"
+            android:text="Sign Up With Google"
+            android:textAllCaps="false"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/da_bg_bottom_shadow">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/DABackIcon"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                style="@style/DAHeading"
+                android:layout_alignTop="@id/ivBack"
+                android:layout_alignBottom="@id/ivBack"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="0dp"
+                android:layout_toEndOf="@id/ivBack"
+                android:gravity="center"
+                android:text="@string/dA_mallanie"
+                android:textSize="@dimen/da_font_size_xlarge" />
+
+            <View
+                android:id="@+id/viewStatus"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignTop="@id/tvUserName"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="@dimen/da_spacing_control"
+                android:layout_toEndOf="@id/tvUserName"
+                android:background="@drawable/da_bg_circle_dot" />
+
+            <ImageView
+                android:id="@+id/ivCall"
+                style="@style/DABackIcon"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/ivAppointment"
+                android:src="@drawable/da_ic_call"
+                app:tint="@color/da_red" />
+
+            <ImageView
+                android:id="@+id/ivAppointment"
+                style="@style/DABackIcon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:src="@drawable/da_ic_school_calendar"
+                app:tint="@color/da_red" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChat"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/_14sdp"
+            android:paddingBottom="@dimen/_50sdp" />
+    </LinearLayout>
+
+    <include layout="@layout/da_chat_layout_bottom" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

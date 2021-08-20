@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="da_colorPrimary">#7560F9</color>
+    <color name="da_colorPrimaryDark">#FFFFFF</color>
+    <color name="da_colorAccent">#765BF2</color>
+    <color name="da_colorPrimary_light">#3E3A5BFB</color>
+    <color name="da_textColorPrimary">#8F8F8F</color>
+    <color name="da_textColorSecondary">#C4C4C4</color>
+    <color name="da_textColorThird">#DCDCDC</color>
+    <color name="da_textColorGrey">#B4BBC2</color>
+    <color name="da_white">#FFFFFF</color>
+    <color name="da_layout_background_white">#F6F7FA</color>
+    <color name="da_view_color">#B4BBC2</color>
+    <color name="da_blue_color">#3A5BFB</color>
+    <color name="da_red">#F87167</color>
+    <color name="da_yellow">#FBC02D</color>
+    <color name="da_fb_blue">#3d5895</color>
+    <color name="da_google_red">#DB4C3B</color>
+    <color name="da_light_gray">#F4F4F4</color>
+    <color name="da_red1">#FA7268</color>
+    <color name="da_red2">#FD947A</color>
+    <color name="da_red_dark">#Fd5250</color>
+    <color name="da_red_green">#5BE14C</color>
+    <color name="da_green">#18CF18</color>
+    <color name="da_red_light">#50F87167</color>
+    <color name='shuga_red'>#ff5152</color>
+</resources>

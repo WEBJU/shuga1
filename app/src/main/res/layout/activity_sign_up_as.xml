@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/da_white"
+    android:fillViewport="true"
+    tools:context=".activity.OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#36C8C7C7"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            style="@style/DABackIcon" />
+
+        <TextView
+            style="@style/DAHeading"
+            android:layout_marginTop="@dimen/da_spacing_standard"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:text="You Want to Create Account As?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/da_spacing_standard_new"
+            android:layout_marginTop="@dimen/da_spacing_large"
+            android:layout_marginEnd="@dimen/da_spacing_standard_new"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/da_spacing_control"
+            android:paddingTop="@dimen/da_spacing_control_half"
+            android:text="Select Account Type"
+            android:textColor="@color/da_textColorPrimary"
+            android:textSize="@dimen/da_font_size_medium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sponsor"
+                style="@style/Theme9MaterialButton"
+                android:layout_marginStart="@dimen/da_spacing_xlarge"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/da_spacing_xlarge"
+                android:layout_marginBottom="@dimen/da_spacing_xlarge"
+                android:gravity="center_horizontal"
+                android:text="Sponsor"
+                android:textColor="@color/da_textColorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/sugar_baby"
+                style="@style/Theme9MaterialButton"
+                android:layout_marginStart="@dimen/da_spacing_xlarge"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/da_spacing_xlarge"
+                android:layout_marginBottom="@dimen/da_spacing_xlarge"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/sponsor"
+                android:text="Sugar Baby"
+                android:textColor="@color/da_textColorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/continueBtn"
+                style="@style/Theme9MaterialButton"
+                android:layout_marginStart="@dimen/da_spacing_xlarge"
+                android:layout_marginTop="@dimen/_160sdp"
+                android:layout_marginEnd="@dimen/da_spacing_xlarge"
+                android:layout_marginBottom="@dimen/da_spacing_xlarge"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/sugar_baby"
+                android:text="Continue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

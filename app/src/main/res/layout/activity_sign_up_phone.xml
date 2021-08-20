@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/da_white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36C8C7C7"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/phoneLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#36C8C7C7"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/da_spacing_standard">
+
+            <TextView
+                style="@style/DAHeading"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:text="Enter your Phone Number" />
+
+            <TextView
+                style="@style/DAEditTextHint"
+                android:layout_marginStart="@dimen/da_spacing_large"
+                android:layout_marginTop="@dimen/_130sdp"
+                android:text="Phone Number"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/da_spacing_large"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/da_spacing_standard">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/da_spacing_small"
+                    app:ccp_arrowColor="@color/da_textColorPrimary"
+                    app:ccp_contentColor="@color/da_colorPrimary"
+                    app:ccp_defaultNameCode="KE"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/da_spacing_mlarge"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/da_spacing_small"
+                    android:layout_marginBottom="@dimen/da_spacing_small"
+                    android:background="@color/da_colorPrimary" />
+
+                <EditText
+
+                    android:id="@+id/phoneEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:ems="13"
+                    android:hint="07XXXXXXXX"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingStart="@dimen/da_spacing_standard"
+                    android:paddingEnd="@dimen/da_spacing_standard"
+                    android:textColor="@color/da_textColorPrimary"
+                    android:textColorHint="@color/da_textColorThird">
+
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/continueBtn"
+                style="@style/Theme9MaterialButton"
+                android:layout_marginStart="@dimen/da_spacing_xlarge"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:layout_marginEnd="@dimen/da_spacing_xlarge"
+                android:layout_marginBottom="@dimen/da_spacing_xlarge"
+                android:gravity="center_horizontal"
+                android:text="Continue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/codeLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#36C8C7C7"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/DABackIcon" />
+            <TextView
+                style="@style/DAHeading"
+                android:layout_marginTop="@dimen/da_spacing_standard"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="@string/da_veri_code" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/da_spacing_standard_new"
+                android:layout_marginTop="@dimen/da_spacing_large"
+                android:layout_marginEnd="@dimen/da_spacing_standard_new"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/da_spacing_control"
+                android:paddingTop="@dimen/da_spacing_control_half"
+                android:text="Enter the code that was sent to"
+                android:textColor="@color/da_textColorPrimary"
+                android:textSize="@dimen/da_font_size_medium" />
+
+            <TextView
+                android:id="@+id/codeSentDescriptionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/da_spacing_control"
+                android:paddingTop="@dimen/da_spacing_control_half"
+                android:text="+2547XXXXXXXX"
+                android:textAppearance="@style/DAFontSemiBold"
+                android:textColor="@color/da_textColorPrimary"
+                android:textSize="@dimen/da_font_size_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/da_spacing_xlarge"
+                android:layout_marginBottom="@dimen/da_spacing_xmedium"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edDigit1"
+                    style="@style/DAOTPDigit"
+                    android:background="@color/white">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edDigit2"
+                    style="@style/DAOTPDigit"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/edDigit3"
+                    style="@style/DAOTPDigit"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/edDigit4"
+                    style="@style/DAOTPDigit"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/edDigit5"
+                    style="@style/DAOTPDigit"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/edDigit6"
+                    style="@style/DAOTPDigit"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/loginBtn"
+                style="@style/Theme9MaterialButton"
+                android:layout_marginStart="@dimen/da_spacing_xlarge"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:layout_marginEnd="@dimen/da_spacing_xlarge"
+                android:layout_marginBottom="@dimen/da_spacing_xlarge"
+                android:gravity="center_horizontal"
+                android:text="Continue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/da_spacing_standard_new"
+                android:layout_marginTop="@dimen/da_spacing_standard_new"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/da_spacing_control"
+                android:paddingTop="@dimen/da_spacing_control_half"
+                android:text="Have you not received the code"
+                android:textAppearance="@style/DAFontMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/da_font_size_small" />
+
+            <TextView
+                android:id="@+id/codeResendTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/da_spacing_standard_new"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/da_spacing_control"
+                android:paddingTop="@dimen/da_spacing_control_half"
+                android:text="@string/resend"
+                android:textAllCaps="true"
+                android:textAppearance="@style/DAFontMedium"
+                android:textColor="@color/shuga_red"
+                android:textSize="@dimen/da_font_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

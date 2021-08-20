@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#36C8C7C7"
+
+    tools:context=".activity.ui.notifications.NotificationsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/da_spacing_control">
+
+        <TextView
+            style="@style/DAHeading"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="My Account" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/vpMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:overScrollMode="never">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/DAEditTextHint"
+                        android:layout_marginStart="@dimen/_28sdp"
+                        android:layout_marginTop="@dimen/da_spacing_standard"
+                        android:text="Choose Your Level With Different Fee?"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="Level 1"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/level1"
+                            style="@style/DAMaterialButtonStyle.Enabled"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:text="Kshs 500"
+                            android:textAllCaps="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="Level 2"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/level2"
+                            style="@style/DAMaterialButtonStyle.Enabled"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:text="Kshs 2500"
+                            android:textAllCaps="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="Level 3"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/level3"
+                            style="@style/DAMaterialButtonStyle.Enabled"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:text="Kshs 2500"
+                            android:textAllCaps="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="Level 2"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/level4"
+                            style="@style/DAMaterialButtonStyle.Enabled"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:text="Kshs 5000"
+                            android:textAllCaps="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/DAHeading"
+                        android:layout_marginTop="@dimen/da_spacing_standard"
+                        android:text="Payment Gateways" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@drawable/americanexpress" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@drawable/discover" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@drawable/mastercard" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@drawable/visa" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@drawable/mpesa" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="First Name"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edtemail"
+                            style="@style/DaEditText"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:background="@color/white"
+                            android:hint="First Name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="Last Name"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edtemailb"
+                            style="@style/DaEditText"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:background="@color/white"
+                            android:hint="Last Name" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/DAEditTextHint"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Billing Address"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/address1"
+                    style="@style/DaEditText"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:layout_marginEnd="@dimen/_48sdp"
+                    android:background="@color/white"
+                    android:hint="Address Line 1" />
+
+                <EditText
+                    android:id="@+id/address2"
+                    style="@style/DaEditText"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:layout_marginEnd="@dimen/_48sdp"
+                    android:background="@color/white"
+                    android:hint="Address Line 2" />
+
+                <TextView
+                    style="@style/DAEditTextHint"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Country"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/country"
+                    style="@style/DaEditText"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:layout_marginEnd="@dimen/_48sdp"
+                    android:background="@color/white"
+                    android:hint="Country" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="City"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/city"
+                            style="@style/DaEditText"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_28sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:background="@color/white"
+                            android:hint="City" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/DAEditTextHint"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:text="Province"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/province"
+                            style="@style/DaEditText"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/da_spacing_standard"
+                            android:background="@color/white"
+                            android:hint="Province" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/DAEditTextHint"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Zip/Postal Code"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/zip"
+                    style="@style/DaEditText"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:layout_marginEnd="@dimen/_48sdp"
+                    android:background="@color/white"
+                    android:hint="Zip/Postal Code" />
+
+                <TextView
+                    style="@style/DAEditTextHint"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Phone Number"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/llMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/da_spacing_large"
+
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/da_spacing_large"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/da_spacing_standard">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/counryCodePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/da_spacing_small"
+                        android:paddingEnd="@dimen/da_spacing_small"
+                        app:ccp_arrowColor="@color/da_textColorPrimary"
+                        app:ccp_contentColor="@color/da_colorPrimary"
+                        app:ccp_defaultNameCode="KE"
+                        app:ccp_showFlag="true"
+                        app:ccp_showNameCode="false"
+                        app:ccp_showPhoneCode="false" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="@dimen/da_spacing_mlarge"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/da_spacing_small"
+                        android:layout_marginBottom="@dimen/da_spacing_small"
+                        android:background="@color/da_colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/edMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/da_hint_mobile"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingStart="@dimen/da_spacing_standard"
+                        android:paddingEnd="@dimen/da_spacing_standard"
+                        android:textColor="@color/da_textColorPrimary"
+                        android:textColorHint="@color/da_textColorThird" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/DAEditTextHint"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Card Number"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cardno"
+                    style="@style/DaEditText"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/da_spacing_standard"
+                    android:layout_marginEnd="@dimen/_48sdp"
+                    android:layout_marginBottom="@dimen/da_spacing_standard"
+
+                    android:background="@color/white"
+                    android:hint="Card Number" />
+
+                <TextView
+                    android:id="@+id/finish"
+                    style="@style/Theme9MaterialButton"
+                    android:layout_marginStart="@dimen/da_spacing_xlarge"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginEnd="@dimen/da_spacing_xlarge"
+                    android:layout_marginBottom="@dimen/da_spacing_xlarge"
+                    android:background="@color/shuga_red"
+                    android:gravity="center_horizontal"
+                    android:text="Confirm Payment"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/da_spacing_large"
+                    android:layout_marginEnd="@dimen/da_spacing_large" />
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

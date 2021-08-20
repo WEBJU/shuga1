@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/ivDateProfilez"
+        android:transitionName="profile"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/da_user_profile"
+        android:scaleType="centerCrop"
+        />
+
+    <!--
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/da_spacing_standard_new">
+            <com.iqonic.datingapp.utils.DAVerticalViewPager
+                android:id="@+id/vpProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dotsColor="@color/da_white"
+                app:dotsCornerRadius="8dp"
+                android:layout_gravity="bottom|center_horizontal"
+                app:dotsSize="@dimen/da_spacing_standard"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:selectedDotColor="@color/da_white"
+                android:layout_margin="@dimen/da_spacing_standard_new"
+                app:progressMode="true"
+                />
+        </androidx.cardview.widget.CardView>
+    -->
+
+    <!--
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/da_gradation_black">
+
+            <RelativeLayout
+                android:paddingTop="@dimen/da_spacing_xlarge"
+                android:paddingBottom="@dimen/da_spacing_standard_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melanie, 23"
+                    android:textSize="@dimen/da_font_size_xxlarge"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="@style/DAFontBold"
+                    android:textStyle="bold"
+                    android:textColor="@color/da_white"/>
+                <TextView
+                    android:id="@+id/tvDisatance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tvName"
+                    android:gravity="center"
+                    android:layout_alignBottom="@id/tvName"
+                    android:text="2 km"
+                    android:drawableStart="@drawable/da_ic_paper_plane"
+                    android:drawableTint="@color/da_white"
+                    android:drawablePadding="@dimen/da_spacing_standard"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/da_font_size_normal"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/da_white"/>
+                <TextView
+                    android:id="@+id/tvProfession"
+                    android:layout_below="@id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/da_art_director"
+                    android:drawableStart="@drawable/da_bag"
+                    android:layout_marginTop="@dimen/da_spacing_control"
+                    android:drawableTint="@color/da_white"
+                    android:drawablePadding="@dimen/da_spacing_standard"
+                    android:textSize="@dimen/da_font_size_normal"
+                    android:layout_marginStart="@dimen/da_spacing_standard_new"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/da_white"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    -->
+
+
+    <FrameLayout
+        android:id="@+id/left_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30FFFFFF">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/da_ic_cancel_gradient"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/right_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30FFFFFF">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/da_ic_heart_gradient"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/top_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</FrameLayout>

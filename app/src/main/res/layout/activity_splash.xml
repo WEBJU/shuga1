@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Welcome">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#4D000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_background" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="@dimen/_210sdp"
+            android:src="@drawable/da_splash_icon" />
+
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:letterSpacing="0.05"
+            android:text="@string/app_name"
+            android:textAppearance="@style/DAFontBold"
+            android:textColor="@color/da_white"
+            android:textSize="@dimen/da_font_size_xxxlarge"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+</RelativeLayout>

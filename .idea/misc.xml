@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/da_background_tab.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_bg_black_dot.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_chat.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_chat_grd.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_checkmark.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_clock.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_close.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_connect.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_delete_black_24dp.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_distance.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_email.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_explore.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_explore_grd.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_eye_off_line.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_facebook.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_female.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_filter.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_heart.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_ic_heart_gradient.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_navigation.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_navigation_bmp.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_rotate.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_rounded_stroked.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_roundrect.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_settings.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_shadoe.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_shadoe_8dp.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_shadoe_gradient.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/da_shadow_16dp.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/da_ic_heart_checked.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/da_ic_heart_menu.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_cancel.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_heart.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_speech_bubble.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_speech_bubble_checked.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_speech_bubble_menu.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_star.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_user.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/ic_userb_menu_checked.xml" value="0.115625" />
+        <entry key="app/src/main/res/drawable/refresh.xml" value="0.115625" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_facebook.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.19009370816599733" />
+        <entry key="app/src/main/res/layout/activity_security.xml" value="0.3127962085308057" />
+        <entry key="app/src/main/res/layout/activity_sign_up_as.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sign_up_phone.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/activity_sign_up_profile_pic.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_subscription.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/activity_user_detail.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_view_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/chat_from_item.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/chat_to_item.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/da_chat_layout_bottom.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/da_content_user_detail.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/da_item_user.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/da_item_user_detail.xml" value="0.103125" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3127962085308057" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

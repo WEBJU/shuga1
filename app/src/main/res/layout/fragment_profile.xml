@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/profile">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/da_spacing_middle"
+            android:text="@string/da_settings"
+            android:textAppearance="@style/DAFontBold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/da_font_size_xlarge"
+            android:textStyle="bold" />
+
+        <com.usalama.usalamatechnology.shuga.utils.DACircleImageView
+
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/da_spacing_large"
+            android:src="@drawable/da_prfile_3" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/da_spacing_middle"
+            android:text="@string/da_william"
+            android:textAppearance="@style/DAFontBold"
+            android:textColor="@color/shuga_red"
+            android:textSize="@dimen/da_font_size_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFilter"
+            style="@style/DAProfileText"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:drawableStart="@drawable/da_ic_filter"
+            android:drawableEnd="@drawable/da_ic_left_arrow"
+            android:text="@string/da_filter" />
+
+        <TextView
+            android:id="@+id/tvSecurity"
+            style="@style/DAProfileText"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:drawableStart="@drawable/da_ic_padlock"
+            android:drawableEnd="@drawable/da_ic_left_arrow"
+
+            android:text="@string/da_security" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/tvNotification"
+                style="@style/DAProfileText"
+                android:drawableStart="@drawable/da_ic_padlock"
+                android:drawableEnd="@drawable/da_ic_left_arrow"
+                android:text="@string/da_notification" />
+
+            <Switch
+                android:id="@+id/switchNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/da_spacing_middle"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:background="@null"
+                android:checked="true"
+                android:thumbTint="@color/da_white"
+                android:track="@drawable/da_custom_switch" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/tvConnectInsta"
+                style="@style/DAProfileText"
+                android:drawableStart="@drawable/da_ic_connect"
+                android:text="@string/da_connect_insta" />
+
+            <Switch
+                android:id="@+id/connectInstaNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/da_spacing_middle"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:background="@null"
+                android:thumbTint="@color/da_white"
+                android:track="@drawable/da_custom_switch" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvSupport"
+            style="@style/DAProfileText"
+            android:drawableStart="@drawable/da_ic_call"
+            android:drawableEnd="@drawable/da_ic_left_arrow"
+            android:text="@string/da_support" />
+
+        <View style="@style/DADivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/da_spacing_large"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLogout"
+                style="@style/DAProfileText"
+                android:gravity="center_horizontal"
+                android:text="@string/da_logout" />
+
+            <View style="@style/DADivider" />
+
+            <TextView
+                android:id="@+id/tvDeleteAccount"
+                style="@style/DAProfileText"
+                android:gravity="center_horizontal"
+                android:text="@string/da_del_ac"
+                android:textColor="@color/da_red" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

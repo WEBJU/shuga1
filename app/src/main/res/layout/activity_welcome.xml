@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/da_white"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36C8C7C7" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="322dp"
+                android:layout_height="602dp"
+                android:layout_marginStart="@dimen/_48sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginEnd="@dimen/_48sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_210sdp"
+                    android:layout_height="@dimen/_210sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/da_splash_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="Find Your Shuga"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/da_font_size_normal" />
+
+
+                <TextView
+                    android:id="@+id/login"
+                    style="@style/Theme9MaterialButtond"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:gravity="center_horizontal"
+                    android:text="Log in" />
+
+                <TextView
+                    android:id="@+id/signup"
+                    style="@style/Theme9MaterialButton"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_horizontal"
+                    android:text="Sign Up" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="--------- or sign up with--------"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/da_font_size_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@mipmap/ic_phone" />-->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:id="@+id/fblogin"
+                        android:src="@mipmap/ic_facebook" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:id="@+id/google"
+                        android:src="@mipmap/ic_google" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/da_spacing_large"
+    app:cardCornerRadius="@dimen/da_spacing_control">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            style="@style/DAHeading"
+            android:gravity="center"
+            android:layout_margin="@dimen/da_spacing_large"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/da_font_size_xxlarge"
+            android:text="@string/da_add_photo" />
+
+        <TextView
+            android:id="@+id/tvCamera"
+            style="@style/DAProfileText"
+            android:drawableTop="@drawable/da_ic_photo_camera"
+            android:drawablePadding="@dimen/da_spacing_control"
+            android:gravity="center_horizontal"
+            android:text="@string/da_camera" />
+
+        <View style="@style/DADivider"
+            android:layout_marginStart="@dimen/da_spacing_standard_new"
+            android:layout_marginEnd="@dimen/da_spacing_standard_new"/>
+
+        <TextView
+            android:id="@+id/tvCameraRoll"
+            style="@style/DAProfileText"
+            android:drawableTop="@drawable/da_ic_gallery"
+            android:layout_margin="@dimen/da_spacing_large"
+            android:drawablePadding="@dimen/da_spacing_control"
+            android:gravity="center_horizontal"
+            android:text="@string/da_camera_roll" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

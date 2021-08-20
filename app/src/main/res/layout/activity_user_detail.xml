@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivBack"
+        style="@style/DABackIcon"
+        android:padding="@dimen/da_spacing_control"
+        android:src="@drawable/da_ic_close"
+        app:tint="@color/da_textColorPrimary" />
+<LinearLayout
+    android:id="@+id/pictures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/da_gradation_white"
+            android:orientation="vertical">
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"/>
+    <!--<ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/da_profile_2" />
+
+    <ImageView
+        android:id="@+id/ivPhoto2"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/da_profile_2" />-->
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="506dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/da_gradation_white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/da_spacing_xxxlarge"
+            android:paddingBottom="@dimen/da_spacing_xlarge">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/DAHeading"
+                android:text="@string/da_william_26"
+                android:textColor="@color/da_red2" />
+
+            <TextView
+                android:id="@+id/tvProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginStart="@dimen/da_spacing_large"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:text="@string/da_profession"
+                android:textAppearance="@style/DAFontSemiBold"
+                android:textColor="@color/da_textColorPrimary"
+                android:textSize="@dimen/da_font_size_xlarge" />
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvProfession"
+                android:layout_marginStart="@dimen/da_spacing_large"
+                android:layout_marginTop="@dimen/da_spacing_large"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:text="@string/da_about"
+                android:textAppearance="@style/DAFontSemiBold"
+                android:textColor="@color/da_textColorGrey"
+                android:textSize="@dimen/da_font_size_large" />
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAbout"
+                android:layout_marginStart="@dimen/da_spacing_large"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:text="Proffession"
+                android:textAppearance="@style/DAFontSemiBold"
+                android:textColor="@color/da_textColorPrimary"
+                android:textSize="@dimen/da_font_size_xlarge" />
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAbout"
+                android:layout_marginStart="@dimen/da_spacing_large"
+
+                android:text="@string/da_profession"
+                android:textAppearance="@style/DAFontSemiBold"
+                android:textColor="@color/da_textColorGrey"
+                android:textSize="@dimen/da_font_size_large" />
+
+            <TextView
+                android:id="@+id/Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMore"
+                android:layout_marginStart="@dimen/da_spacing_large"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:text="Status:"
+                android:textAppearance="@style/DAFontSemiBold"
+                android:textColor="@color/da_textColorPrimary"
+                android:textSize="@dimen/da_font_size_xlarge" />
+
+            <TextView
+                android:id="@+id/tvMoreAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMore"
+                android:layout_marginStart="@dimen/da_spacing_large"
+                android:layout_marginEnd="@dimen/da_spacing_large"
+                android:text="@string/da_about"
+                android:textAppearance="@style/DAFontSemiBold"
+                android:textColor="@color/da_textColorSecondary"
+                android:textSize="@dimen/da_font_size_large" />
+
+
+            <!--<ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignTop="@id/tvAbout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/da_spacing_large"
+            android:background="@drawable/da_circle_redprimary"
+            android:padding="@dimen/da_spacing_middle"
+            android:src="@drawable/da_ic_mode_edit_black_24dp"
+            app:tint="@color/da_white" />-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/da_gradation_white"
+            android:gravity="center|bottom"
+            android:paddingStart="@dimen/da_spacing_standard_new"
+            android:paddingTop="@dimen/da_spacing_standard_new"
+            android:paddingEnd="@dimen/da_spacing_standard_new"
+            android:paddingBottom="@dimen/da_spacing_large">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/da_bg_circle"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/da_ic_cancel_mark"
+                app:tint="@color/da_white" />
+
+            <ImageView
+                android:id="@+id/ivUndo"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/da_spacing_xxlarge"
+                android:layout_marginEnd="@dimen/da_spacing_xxlarge"
+                android:background="@drawable/da_bg_circle"
+                android:backgroundTint="@color/da_light_gray"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/da_ic_undo_arrow"
+                app:tint="@color/da_yellow" />
+
+            <ImageView
+                android:id="@+id/ivHeart"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/da_bg_circle_grren"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/da_ic_heart"
+                app:tint="@color/da_white" />
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
+<!--
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/da_white"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.UserDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_440sdp"
+        android:background="@color/da_white"
+        android:fitsSystemWindows="true"
+        android:theme="@style/DAAppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/da_white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <com.usalama.usalamatechnology.shuga.utils.cardstackview.CardStackView
+                android:id="@+id/cardStack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tvName"
+                android:clipToPadding="false"
+                android:transitionName="profile" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/DAAppTheme.PopupOverlay">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    style="@style/DABackIcon"
+                    android:layout_marginTop="0dp"
+                    android:padding="@dimen/da_spacing_control"
+                    android:src="@drawable/da_ic_close" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/user_detail"
+        layout="@layout/da_content_user_detail" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/da_gradation_white"
+        android:gravity="center|bottom"
+        android:paddingStart="@dimen/da_spacing_standard_new"
+        android:paddingTop="@dimen/da_spacing_standard_new"
+        android:paddingEnd="@dimen/da_spacing_standard_new"
+        android:paddingBottom="@dimen/da_spacing_large">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/da_bg_circle"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/da_ic_cancel_mark"
+            app:tint="@color/da_white" />
+
+        <ImageView
+            android:id="@+id/ivUndo"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/da_spacing_xxlarge"
+            android:layout_marginEnd="@dimen/da_spacing_xxlarge"
+            android:background="@drawable/da_bg_circle"
+            android:backgroundTint="@color/da_light_gray"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/da_ic_undo_arrow"
+            app:tint="@color/da_yellow" />
+
+        <ImageView
+            android:id="@+id/ivHeart"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/da_bg_circle_grren"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/da_ic_heart"
+            app:tint="@color/da_white" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+-->

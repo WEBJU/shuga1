@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/da_white"
+    tools:context=".activity.SecurityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/DABackIcon"/>
+            <TextView
+                style="@style/DAHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/ivBack"
+                android:layout_alignBottom="@id/ivBack"
+                android:gravity="center"
+                android:textSize="@dimen/da_font_size_xlarge"
+                android:text="@string/da_security" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/DAProfileText"
+            android:paddingTop="@dimen/da_spacing_large"
+            android:drawableStart="@drawable/da_ic_email"
+            android:drawableEnd="@drawable/da_ic_left_arrow"
+            android:hint="@string/da_username" />
+
+        <!--<View style="@style/DADivider" />-->
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/DAProfileText"
+            android:paddingTop="@dimen/da_spacing_middle"
+            android:drawableStart="@drawable/da_ic_padlock"
+            android:drawableEnd="@drawable/da_ic_left_arrow"
+            android:hint="@string/da_password" />
+
+        <!--<View style="@style/DADivider" />-->
+        <TextView
+            android:id="@+id/setBtn"
+            style="@style/Theme9MaterialButton"
+            android:layout_marginStart="@dimen/da_spacing_xlarge"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/da_spacing_xlarge"
+            android:layout_marginBottom="@dimen/da_spacing_xlarge"
+            android:gravity="center_horizontal"
+            android:text="SET"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/da_white"
+    tools:context=".activity.SecurityActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#36C8C7C7"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/DAEditTextHint"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:text="Username"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/DaEditText"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/da_spacing_standard"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:background="@color/white"
+            android:hint="Enter Your Username"
+            android:inputType="text"/>
+
+        <TextView
+            style="@style/DAEditTextHint"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Email"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/email"
+            style="@style/DaEditText"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/da_spacing_standard"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:background="@color/white"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            style="@style/DAEditTextHint"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Password"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/password"
+            style="@style/DaEditText"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/da_spacing_standard"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:background="@color/white"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:id="@+id/setBtn"
+            style="@style/Theme9MaterialButton"
+            android:layout_marginStart="@dimen/da_spacing_xlarge"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/da_spacing_xlarge"
+            android:layout_marginBottom="@dimen/da_spacing_xlarge"
+            android:gravity="center_horizontal"
+            android:text="SET"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+    &lt;!&ndash;<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/DABackIcon"/>
+            <TextView
+                style="@style/DAHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/ivBack"
+                android:layout_alignBottom="@id/ivBack"
+                android:gravity="center"
+                android:textSize="@dimen/da_font_size_xlarge"
+                android:text="@string/da_security" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/DAProfileText"
+            android:paddingTop="@dimen/da_spacing_large"
+            android:drawableStart="@drawable/da_ic_email"
+            android:drawableEnd="@drawable/da_ic_left_arrow"
+            android:text="@string/da_email" />
+
+        <View style="@style/DADivider" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            style="@style/DAProfileText"
+            android:paddingTop="@dimen/da_spacing_middle"
+            android:drawableStart="@drawable/da_ic_padlock"
+            android:drawableEnd="@drawable/da_ic_left_arrow"
+            android:text="@string/da_password" />
+
+        <View style="@style/DADivider" />
+
+
+
+    </LinearLayout>&ndash;&gt;
+</ScrollView>-->
